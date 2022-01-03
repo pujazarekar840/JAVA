@@ -6,6 +6,7 @@ public class Demo1 {
 		System.out.println(myStr.replace('l','p'));
 		
 		String s7="10";
+		@SuppressWarnings("unused")
 		Integer iob=Integer.valueOf(s7);
 		
 		int m=20;
@@ -13,6 +14,7 @@ public class Demo1 {
 		System.out.println(s5);
 		
 		String s="10";
+		@SuppressWarnings("unused")
 		int c=Integer.parseInt(s);
 		
 		String s1="10";
@@ -23,12 +25,13 @@ public class Demo1 {
 		int sum=Integer.parseInt(s1)+Integer.parseInt(s2);
 		System.out.println("sum="+sum);
 		
-		int a=10;
+		//int a=10;
 		//Integer ob=new Integer(a);//boxing[primitive->classtype]
-		Integer ob=a;//auto Boxing
+		//Integer ob=a;//auto Boxing
 		
-		Integer ob2=new Integer(200);
+		Integer ob2=200;
 		//int b=ob2.valueOf();//unboxing[classtype->primitive]
-		int b=ob2;//Auto unboxing
+		//int b=ob2;//Auto unboxing
+		System.out.println(ob2);
 		}
 }
